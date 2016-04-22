@@ -87,7 +87,7 @@ html, body
 
 .timeBarS .unitWrapper
 {
-	transition: 400ms ease-out;
+	transition: 200ms ease-out;
 	background: #aed9d7;
 }
 
@@ -105,7 +105,7 @@ html, body
 
 .timeBarM .unitWrapper
 {
-	transition: 600ms ease-out;
+	transition: 400ms ease-out;
 	background: #f2c396;
 }
 
@@ -123,7 +123,7 @@ html, body
 
 .timeBarH .unitWrapper
 {
-	transition: 800ms ease-out;
+	transition: 600ms ease-out;
 	background: #f9f1e6;
 }
 
