@@ -82,11 +82,16 @@ function enterFrame_loop()
 function time_check()
 {
 	var amend = false;
+	var resize_H = 0;
+	var resize_M = 0;
+	var resize_S = 0;
 
 	// HOUR
 	if(timeData.read.h != timeData.current.h)
 	{
-		clock.hour.gfx.style.transform = "scale(" + (timeData.read.h * clock.hour.percentage) / 100 + ")";
+		resize_H = 1 + (timeData.read.h * clock.hour.percentage) / 100;
+
+		clock.hour.gfx.style.transform = "scale(" + resize_H + ")";
 
 		timeData.current.h = timeData.read.h;
 	}
@@ -94,7 +99,9 @@ function time_check()
 	// MINS
 	if(timeData.read.m != timeData.current.m)
 	{
-		clock.mins.gfx.style.transform = "scale(" + (timeData.read.m * clock.mins.percentage) / 100 + ")";
+		resize_M = 1 + (timeData.read.m * clock.mins.percentage) / 100;
+
+		clock.mins.gfx.style.transform = "scale(" + resize_M + ")";
 
 		timeData.current.m = timeData.read.m;
 	}
@@ -102,7 +109,9 @@ function time_check()
 	// SECS
 	if(timeData.read.s != timeData.current.s)
 	{
-		clock.secs.gfx.style.transform = "scale(" + (timeData.read.s * clock.secs.percentage) / 100 + ")";
+		resize_S = 1 + (timeData.read.s * clock.secs.percentage) / 100;
+
+		clock.secs.gfx.style.transform = "scale(" + resize_S + ")";
 
 		timeData.current.s = timeData.read.s;
 	}

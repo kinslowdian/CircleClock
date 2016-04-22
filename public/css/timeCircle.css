@@ -32,8 +32,8 @@ html, body
 
 	overflow: hidden;
 
-	/* background: radial-gradient(ellipse at center,  #88cada 0%, #9fc377 100%); */
-	background: #333;
+	background: radial-gradient(ellipse at center,  rgb(4, 4, 14) 0%, rgb(50, 50, 60) 100%);
+	/* background: #333; */
 }
 
 .unitWrapper
@@ -51,27 +51,27 @@ html, body
 
 .timeBlur-min
 {
-	-webkit-filter: blur(2px);
-	filter: blur(2px);
+/* 	-webkit-filter: blur(20px);
+	filter: blur(20px); */
 }
 
 .timeBlur-med
 {
-	-webkit-filter: blur(4px);
-	filter: blur(4px);
+/* 	-webkit-filter: blur(40px);
+	filter: blur(40px); */
 }
 
 .timeBlur-max
 {
-	-webkit-filter: blur(6px);
-	filter: blur(6px);
+/* 	-webkit-filter: blur(60px);
+	filter: blur(60px); */
 }
 
 .timeBarS
 {
 	display: block;
-	width: 600px;
-	height: 600px;
+	width: 240px;
+	height: 240px;
 
 	position: absolute;
 
@@ -88,8 +88,8 @@ html, body
 .timeBarM
 {
 	display: block;
-	width: 400px;
-	height: 400px;
+	width: 120px;
+	height: 120px;
 
 	position: absolute;
 
@@ -106,8 +106,8 @@ html, body
 .timeBarH
 {
 	display: block;
-	width: 200px;
-	height: 200px;
+	width: 60px;
+	height: 60px;
 
 	position: absolute;
 
