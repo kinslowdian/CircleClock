@@ -32,7 +32,7 @@ html, body
 
 	overflow: hidden;
 
-	background: radial-gradient(ellipse at center,  rgb(4, 4, 14) 0%, rgb(50, 50, 60) 100%);
+	background: radial-gradient(ellipse at center,  #1b1411 0%, #2e3938 100%);
 	/* background: #333; */
 }
 
@@ -51,20 +51,20 @@ html, body
 
 .timeBlur-min
 {
-/* 	-webkit-filter: blur(20px);
-	filter: blur(20px); */
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
 }
 
 .timeBlur-med
 {
-/* 	-webkit-filter: blur(40px);
-	filter: blur(40px); */
+	-webkit-filter: blur(20px);
+	filter: blur(20px);
 }
 
 .timeBlur-max
 {
-/* 	-webkit-filter: blur(60px);
-	filter: blur(60px); */
+	-webkit-filter: blur(30px);
+	filter: blur(30px);
 }
 
 .timeBarS
@@ -82,7 +82,7 @@ html, body
 .timeBarS .unitWrapper
 {
 	transition: 400ms ease-out;
-	background: white;
+	background: #aed9d7;
 }
 
 .timeBarM
@@ -100,7 +100,7 @@ html, body
 .timeBarM .unitWrapper
 {
 	transition: 600ms ease-out;
-	background: cyan;
+	background: #f2c396;
 }
 
 .timeBarH
@@ -118,7 +118,7 @@ html, body
 .timeBarH .unitWrapper
 {
 	transition: 800ms ease-out;
-	background: yellow;
+	background: #f9f1e6;
 }
 
 
