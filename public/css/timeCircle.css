@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(img.css);
 
 *
 {
@@ -33,59 +32,21 @@ html, body
 
 	overflow: hidden;
 
-	background: radial-gradient(ellipse at center,  #88cada 0%, #9fc377 100%);
+	/* background: radial-gradient(ellipse at center,  #88cada 0%, #9fc377 100%); */
+	background: #333;
 }
 
-.timeBarsH
+.unitWrapper
 {
-	width: 24px;
-	height: 100%;
+	display: block;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
 
 	position: absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-
-	margin: auto;
+	left: 0; right: 0; top: 0; bottom: 0;
 
 	transform-origin: 50% 50%;
-
-	transition: 1200ms ease-in-out;
-}
-
-.timeBarsH .unitWrapper
-{
-	width: inherit;
-	height: 30%;
-
-	background: linear-gradient(to bottom,  rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%);
-
-	position: absolute;
-	transform: translateY(70%);
-}
-
-.timeBarsM
-{
-	width: 24px;
-	height: 100%;
-
-	position: absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-
-	margin: auto;
-
-	transform-origin: 50% 50%;
-
-	transition: 600ms ease-in-out;
-}
-
-.timeBarsM .unitWrapper
-{
-	width: inherit;
-	height: 50%;
-
-	background: linear-gradient(to bottom,  rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%);
-
-	position: absolute;
-	left:0; top: 0; right: 0; bottom: 50%;
 }
 
 .timeBlur-min
@@ -94,65 +55,70 @@ html, body
 	filter: blur(2px);
 }
 
-.timeBlur-max
+.timeBlur-med
 {
 	-webkit-filter: blur(4px);
 	filter: blur(4px);
 }
 
-.unitBar
+.timeBlur-max
 {
-	width: 8px;
-	height: 100%;
+	-webkit-filter: blur(6px);
+	filter: blur(6px);
+}
+
+.timeBarS
+{
+	display: block;
+	width: 600px;
+	height: 600px;
 
 	position: absolute;
-	top: 0; bottom: 0;
 
-	transform-origin: 0% 100%;
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
 }
 
-.hourBar
+.timeBarS .unitWrapper
 {
-	left: 0px;
-	background: #8ab446;
-	transition: 800ms linear;
+	transition: 400ms ease-out;
+	background: white;
 }
 
-.minsBar
+.timeBarM
 {
-	left: 8px;
-	background: #acc864;
-	transition: 600ms linear;
-}
+	display: block;
+	width: 400px;
+	height: 400px;
 
-.secsBar
-{
-	left: 16px;
-	background: #d3e29d;
-	transition: 400ms linear;
-}
-
-.gear
-{
-	width: 240px;
-	height: 240px;
 	position: absolute;
 
-	left: 0; right: 0; bottom: -130px;
-	margin: 0 auto;
-
-	background-repeat: no-repeat;
-	background-position: center center;
-
-	opacity: 0.5;
-
-	animation: gearFrames 800ms linear infinite;
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
 }
 
-@keyframes gearFrames
+.timeBarM .unitWrapper
 {
-	0%		{transform: rotate(0deg);}
-	100%	{transform: rotate(360deg);}
+	transition: 600ms ease-out;
+	background: cyan;
+}
+
+.timeBarH
+{
+	display: block;
+	width: 200px;
+	height: 200px;
+
+	position: absolute;
+
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
+}
+
+.timeBarH .unitWrapper
+{
+	transition: 800ms ease-out;
+	background: yellow;
 }
 
 
