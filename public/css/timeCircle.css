@@ -33,7 +33,6 @@ html, body
 	overflow: hidden;
 
 	background: radial-gradient(ellipse at center,  #1b1411 0%, #2e3938 100%);
-	/* background: #333; */
 }
 
 .world
